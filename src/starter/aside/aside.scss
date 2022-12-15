@@ -1,0 +1,18 @@
+.aside {
+  width: 7vw;
+  padding-bottom: 3%;
+  row-gap: 15%;
+  .box-buttons {
+    button {
+      width: 60%;
+      max-width: 64px;
+      padding-block: 8%;
+      border: none;
+      border-radius: 6px;
+    }
+  }
+  span {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+  }
+}

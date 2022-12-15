@@ -1,0 +1,14 @@
+.dashboard {
+  padding-left: 7vw;
+  padding-right: 5vw;
+  .boxGraph {
+    column-gap: 4vw;
+    height: 67.95vh;
+    &_main {
+      width: 56vw;
+    }
+    &_aside {
+      width: 19vw;
+    }
+  }
+}
