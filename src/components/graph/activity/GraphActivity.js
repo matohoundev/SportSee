@@ -38,11 +38,11 @@ const GraphActivity = () => {
       <div className="graph__activity_header flex justify-between items-center">
         <h2>Activité quotidienne</h2>
         <div className="content flex">
-          <div className="content__aside content__aside--weight">
+          <div className="content__aside">
             <div className="icon rounded bg-dark"></div>
             <p className="text font-medium text-sm color-gray">Poids (kg)</p>
           </div>
-          <div className="content__aside content__aside--calorie">
+          <div className="content__aside">
             <div className="icon rounded bg-red"></div>
             <p className="text font-medium text-sm color-gray">
               Calories brûlées (kCal)
