@@ -8,11 +8,12 @@
 @import "../pages/dashboard/dashboard";
 // @import "../pages/404/notFound";
 // components-kit
-// @import "../components/card/card";
+@import "../components/card/card";
 @import "../components/banner/banner";
-// @import "../components/collapse/collapse";
-// @import "../components/gallery/gallery";
-// @import "../components/tag/tag";
+@import "../components/graph/activity/graphActivity.scss";
+@import "../components/graph/averageSession/graphSession.scss";
+@import "../components/graph/performance/graphPerformance.scss";
+@import "../components/graph/score/graphScore.scss";
 
 /* reset */
 
@@ -96,6 +97,10 @@ ul {
 
 .h-screen {
   height: $h-screen;
+}
+
+.h-md {
+  height: $h-md;
 }
 
 .h-min {
@@ -199,12 +204,23 @@ ul {
   color: $text-black;
 }
 
+.text-dark {
+  color: $color-dark;
+}
+
+.text-darken {
+  color: $color-darken;
+}
 .text-white {
   color: $text-white;
 }
 
 .text-gray {
   color: $text-gray;
+}
+
+.color-gray {
+  color: $color-gray;
 }
 
 .transparent {
@@ -225,9 +241,21 @@ ul {
   background-color: $text-gray;
 }
 
+.bg-dark {
+  background-color: $color-dark;
+}
+
 // just for test
 .bg-blue {
   background-color: blue;
+}
+
+.bg-red {
+  background-color: $color-red;
+}
+
+.bg-white {
+  background-color: $text-white;
 }
 
 // border radius
@@ -705,7 +733,7 @@ ul {
 }
 
 .gap-x-xl {
-  row-gap: 1.25rem;
+  column-gap: 1.25rem;
 }
 
 // position

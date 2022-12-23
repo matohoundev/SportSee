@@ -7,7 +7,7 @@ import strong from "../../assets/icons/strong.svg";
 const Aside = () => {
   return (
     <nav className="aside bg-main-color h-screen flex flex-col items-center justify-end">
-      <div className="box-buttons w-full flex flex-col items-center gap-x-xl">
+      <div className="box-buttons w-full flex flex-col items-center gap-y-xl">
         <button className="w-fit">
           <img src={yoga} alt="" />
         </button>

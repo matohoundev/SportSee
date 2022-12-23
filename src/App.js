@@ -1,16 +1,8 @@
 import { Route, Routes, Navigate } from "react-router-dom";
-import React, { Fragment, useState, useEffect } from "react";
+import React, { Fragment } from "react";
 import Main from "./pages/home/Main";
-import ApiServices from "./services/ApiServices/ApiServices";
 
 function App() {
-  // const [user, setUser] = useState([]);
-
-  // useEffect(() => {
-  //   const apiServices = new ApiServices();
-  //   apiServices.getUserById(12).then((res) => setUser(res.data));
-  // }, []);
-
   return (
     <Fragment>
       <Routes>

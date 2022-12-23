@@ -1,24 +1,14 @@
-import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
-import ApiServices from "../../services/ApiServices/ApiServices";
+import React from "react";
 
-const Banner = () => {
-  const [user, setUser] = useState([]);
-  const { id } = useParams();
-
-  useEffect(() => {
-    const apiServices = new ApiServices();
-    apiServices.getUserById(id).then((res) => setUser(res.data));
-  }, []);
-
+const Banner = ({ infos }) => {
   const {
     userInfos = {
       firstName: "",
     },
-  } = user;
+  } = infos;
 
   return (
-    <div className="banner flex flex-col justify-center gap-x-xl">
+    <div className="banner flex flex-col justify-center gap-y-xl">
       <h1 className="font-medium">
         Bonjour {""}
         <span className="color-primary">{userInfos.firstName}</span>
