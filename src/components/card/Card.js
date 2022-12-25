@@ -1,14 +1,20 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
 import React from "react";
 
-const Card = ({ icons }) => {
+const Card = ({ icons, text, value, suffix }) => {
   return (
     <div className="card-aside bg-gray flex items-center gap-x-xl">
-      <div className="card-aside__icons flex justify-center items-center">
-        <img src={icons} alt="fire" />
+      <div
+        className={`card-aside__icons card-aside__icons--${text} flex justify-center items-center`}
+      >
+        <img src={icons} alt={`image pour ${text}`} />
       </div>
       <div className="flex flex-col card-aside__text">
-        <span className="color-dark font-bold">1,930kCal</span>
-        <span className="color-gray">Calories</span>
+        <span className="color-dark font-bold">
+          {value}
+          {suffix}
+        </span>
+        <span className="color-gray">{text}</span>
       </div>
     </div>
   );

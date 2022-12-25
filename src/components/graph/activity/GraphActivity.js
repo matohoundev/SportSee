@@ -35,8 +35,6 @@ const GraphActivity = () => {
     return { ...data, day: `${index + 1}` };
   });
 
-  console.log("sessionsFormartedDay", sessionsFormartedDay);
-
   return (
     <div className="graph__activity h-md">
       <div className="graph__activity_header flex justify-between items-center">

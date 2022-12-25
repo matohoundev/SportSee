@@ -30,7 +30,7 @@ const Dashboard = () => {
           </div>
         </div>
         <div className="boxGraph_aside">
-          <BoxCard />
+          <BoxCard infos={user} />
         </div>
       </div>
     </div>

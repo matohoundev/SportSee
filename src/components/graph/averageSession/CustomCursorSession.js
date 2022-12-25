@@ -3,7 +3,6 @@ import { Rectangle } from "recharts";
 
 const CustomCursorSession = (props) => {
   const { points, width, height, left, right, bottom } = props;
-  console.log("props", props);
   return (
     <Rectangle
       fill="rgba(0, 0, 0, 0.1)"
