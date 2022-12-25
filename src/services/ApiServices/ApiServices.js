@@ -15,7 +15,7 @@ export default class ApiServices {
   }
 
   getUserAverageSession(id) {
-    return fetch(`${this.url}${id}/averageSession`)
+    return fetch(`${this.url}${id}/average-sessions`)
       .then((response) => response.json())
       .catch((error) => console.log(error));
   }

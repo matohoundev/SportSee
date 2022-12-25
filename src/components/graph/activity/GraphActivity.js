@@ -31,7 +31,11 @@ const GraphActivity = () => {
     ],
   } = activity;
 
-  // console.log("sessions", sessions);
+  const sessionsFormartedDay = sessions.map((data, index) => {
+    return { ...data, day: `${index + 1}` };
+  });
+
+  console.log("sessionsFormartedDay", sessionsFormartedDay);
 
   return (
     <div className="graph__activity h-md">
@@ -51,7 +55,7 @@ const GraphActivity = () => {
         </div>
       </div>
       <ResponsiveContainer height="84%">
-        <BarChart data={sessions} barGap={8}>
+        <BarChart data={sessionsFormartedDay} barGap={8}>
           <CartesianGrid vertical={false} strokeDasharray="1 1" />
           <XAxis
             dataKey={"day"}
