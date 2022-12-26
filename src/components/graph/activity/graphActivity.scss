@@ -1,0 +1,32 @@
+.graph__activity {
+  padding: 25px;
+  &_header {
+    height: 8%;
+    margin-bottom: 1.5rem;
+    margin-right: 1.5rem;
+    h2 {
+      font-size: 0.9375rem;
+      color: #20253a;
+    }
+    .content__aside {
+      display: flex;
+      align-items: center;
+      .text {
+        margin-left: 10px;
+      }
+      .icon {
+        height: 8px;
+        width: 8px;
+        margin-left: 32px;
+      }
+    }
+  }
+}
+
+.recharts-tooltip-wrapper {
+  border: none;
+  .tooltip--Activity {
+    width: 4vw;
+    height: 10vh;
+  }
+}
