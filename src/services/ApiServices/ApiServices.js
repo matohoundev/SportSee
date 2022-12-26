@@ -4,25 +4,49 @@ export default class ApiServices {
   }
   getUserById(id) {
     return fetch(`${this.url}${id}`)
-      .then((response) => response.json())
+      .then((response) => {
+        if (response.status === 404) {
+          window.location.replace("/user/12");
+        } else {
+          return response.json();
+        }
+      })
       .catch((error) => console.log(error));
   }
 
   getUserActivityById(id) {
     return fetch(`${this.url}${id}/activity`)
-      .then((response) => response.json())
+      .then((response) => {
+        if (response.status === 404) {
+          window.location.replace("/user/12");
+        } else {
+          return response.json();
+        }
+      })
       .catch((error) => console.log(error));
   }
 
   getUserAverageSession(id) {
     return fetch(`${this.url}${id}/average-sessions`)
-      .then((response) => response.json())
+      .then((response) => {
+        if (response.status === 404) {
+          window.location.replace("/user/12");
+        } else {
+          return response.json();
+        }
+      })
       .catch((error) => console.log(error));
   }
 
   getUserPerformance(id) {
     return fetch(`${this.url}${id}/performance`)
-      .then((response) => response.json())
+      .then((response) => {
+        if (response.status === 404) {
+          window.location.replace("/user/12");
+        } else {
+          return response.json();
+        }
+      })
       .catch((error) => console.log(error));
   }
 }
