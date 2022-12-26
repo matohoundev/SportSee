@@ -14,13 +14,13 @@ If you are working with several versions of NodeJS, we recommend you install nvm
 
 ## Launching the project
 
-### `Launching the _back-end_`
+### `Launching the back-end`
 
 - Git clone repositorie : `git clone https://github.com/OpenClassrooms-Student-Center/P9-front-end-dashboard.git`
 - Install dependances with `yarn`
 - Launch with `yarn dev`
 
-### `Launching the _front-end_`
+### `Launching the front-end`
 
 - Git clone this repositorie : `git clone https://github.com/matohoundev/SportSee.git`
 - Install dependances with `npm install`
