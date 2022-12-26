@@ -65,6 +65,7 @@ const GraphPerformance = () => {
     "Cardio",
   ];
 
+  // Sort data by order array
   dataFormated.sort((a, b) => {
     return order.indexOf(a.kind) - order.indexOf(b.kind);
   });
