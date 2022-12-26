@@ -2,14 +2,14 @@ import React from "react";
 import PropTypes from "prop-types";
 import { ResponsiveContainer, PieChart, Pie, Cell } from "recharts";
 
-const GraphScore = ({ infos }) => {
+const GraphScore = ({ scoreValue }) => {
   const score = [
     {
-      value: infos.todayScore || infos.score,
+      value: scoreValue,
       fillColor: "#e60000",
     },
     {
-      value: 1 - infos.todayScore || infos.score,
+      value: 1 - scoreValue,
       fillColor: "transparent",
     },
   ];
@@ -50,5 +50,5 @@ const GraphScore = ({ infos }) => {
 export default GraphScore;
 
 GraphScore.propTypes = {
-  infos: PropTypes.object,
+  scoreValue: PropTypes.number,
 };

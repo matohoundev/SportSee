@@ -12,6 +12,20 @@ const Dashboard = () => {
   const [user, setUser] = useState([]);
   const { id } = useParams();
 
+  const {
+    userInfos = {
+      firstName: "",
+    },
+    keyData = {
+      calorieCount: 0,
+      proteinCount: 0,
+      carbohydrateCount: 0,
+      lipidCount: 0,
+    },
+    todayScore,
+    score,
+  } = user;
+
   useEffect(() => {
     const apiServices = new ApiServices();
     apiServices.getUserById(id).then((res) => setUser(res.data));
@@ -19,18 +33,18 @@ const Dashboard = () => {
 
   return (
     <div className="dashboard">
-      <Banner infos={user} />
+      <Banner infos={userInfos} />
       <div className="flex boxGraph">
         <div className="bg-gray boxGraph_main flex flex-col justify-between">
           <GraphActivity />
           <div className="flex justify-between box-bottom">
             <GraphSession />
             <GraphPerformance />
-            <GraphScore infos={user} />
+            <GraphScore scoreValue={todayScore || score} />
           </div>
         </div>
         <div className="boxGraph_aside">
-          <BoxCard infos={user} />
+          <BoxCard infos={keyData} />
         </div>
       </div>
     </div>

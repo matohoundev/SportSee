@@ -30,16 +30,7 @@ const BoxCard = ({ infos }) => {
     },
   ];
 
-  const {
-    keyData = {
-      calorieCount: 0,
-      proteinCount: 0,
-      carbohydrateCount: 0,
-      lipidCount: 0,
-    },
-  } = infos;
-
-  const { calorieCount, proteinCount, carbohydrateCount, lipidCount } = keyData;
+  const { calorieCount, proteinCount, carbohydrateCount, lipidCount } = infos;
 
   return (
     <div className="h-full flex flex-col justify-between">
@@ -67,5 +58,10 @@ const BoxCard = ({ infos }) => {
 export default BoxCard;
 
 BoxCard.propTypes = {
-  infos: PropTypes.object,
+  infos: PropTypes.shape({
+    calorieCount: PropTypes.number,
+    proteinCount: PropTypes.number,
+    carbohydrateCount: PropTypes.number,
+    lipidCount: PropTypes.number,
+  }),
 };
