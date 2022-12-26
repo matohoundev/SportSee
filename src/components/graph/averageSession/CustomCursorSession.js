@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { Rectangle } from "recharts";
 
 const CustomCursorSession = (props) => {
@@ -14,3 +15,12 @@ const CustomCursorSession = (props) => {
 };
 
 export default CustomCursorSession;
+
+CustomCursorSession.propTypes = {
+  points: PropTypes.array,
+  width: PropTypes.number,
+  height: PropTypes.number,
+  left: PropTypes.number,
+  right: PropTypes.number,
+  bottom: PropTypes.number,
+};

@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import React from "react";
+import PropTypes from "prop-types";
 
 const Card = ({ icons, text, value, suffix }) => {
   return (
@@ -21,3 +22,10 @@ const Card = ({ icons, text, value, suffix }) => {
 };
 
 export default Card;
+
+Card.propTypes = {
+  icons: PropTypes.string,
+  text: PropTypes.string,
+  value: PropTypes.number,
+  suffix: PropTypes.string,
+};

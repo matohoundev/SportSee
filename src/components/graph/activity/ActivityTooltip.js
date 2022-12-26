@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 const ActivityTooltip = ({ active, payload }) => {
   if (active) {
@@ -17,3 +18,8 @@ const ActivityTooltip = ({ active, payload }) => {
 };
 
 export default ActivityTooltip;
+
+ActivityTooltip.propTypes = {
+  active: PropTypes.bool,
+  payload: PropTypes.array,
+};

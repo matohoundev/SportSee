@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { ResponsiveContainer, PieChart, Pie, Cell } from "recharts";
 
 const GraphScore = ({ infos }) => {
@@ -47,3 +48,7 @@ const GraphScore = ({ infos }) => {
 };
 
 export default GraphScore;
+
+GraphScore.propTypes = {
+  infos: PropTypes.object,
+};

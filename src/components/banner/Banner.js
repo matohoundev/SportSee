@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 const Banner = ({ infos }) => {
   const {
@@ -21,3 +22,7 @@ const Banner = ({ infos }) => {
 };
 
 export default Banner;
+
+Banner.propTypes = {
+  infos: PropTypes.object,
+};

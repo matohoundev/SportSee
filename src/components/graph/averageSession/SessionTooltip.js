@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 const SessionTooltip = ({ active, payload }) => {
   if (active) {
@@ -12,3 +13,8 @@ const SessionTooltip = ({ active, payload }) => {
 };
 
 export default SessionTooltip;
+
+SessionTooltip.propTypes = {
+  active: PropTypes.bool,
+  payload: PropTypes.array,
+};

@@ -1,5 +1,6 @@
 import React from "react";
 import Card from "../card/Card";
+import PropTypes from "prop-types";
 import fire from "../../assets/icons/fire.svg";
 import apple from "../../assets/icons/apple.svg";
 import chicken from "../../assets/icons/chicken.svg";
@@ -64,3 +65,7 @@ const BoxCard = ({ infos }) => {
 };
 
 export default BoxCard;
+
+BoxCard.propTypes = {
+  infos: PropTypes.object,
+};
