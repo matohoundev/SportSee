@@ -2,6 +2,15 @@ export default class ApiServices {
   constructor() {
     this.url = "http://localhost:3000/user/";
   }
+
+  /**
+   * Retrieves the user's information based on his id.
+   *
+   * @param {string} id - The user's identifier.
+   *
+   * @return {Promise} A promise containing the user's information.
+   */
+
   getUserById(id) {
     return fetch(`${this.url}${id}`)
       .then((response) => {
